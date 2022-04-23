@@ -6,7 +6,7 @@ import launch_ros
 import os
 
 def generate_launch_description():
-    pkg_share = launch_ros.substitutions.FindPackageShare(package='sam_bot_description').find('sam_bot_description')
+    pkg_share = launch_ros.substitutions.FindPackageShare(package='mbse_robot').find('mbse_robot')
     default_model_path = os.path.join(pkg_share, 'src/urdf/mbse.urdf')
     default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
     # world_path=os.path.join(pkg_share, 'world/my_world.sdf')
